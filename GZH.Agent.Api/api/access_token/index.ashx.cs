@@ -17,7 +17,7 @@ namespace GZH.Agent.Api.api.access_token
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.ContentType = "text/plain";
+            context.Response.ContentType = "application/json";
 
             //签名验证
             if (context.Request["id"] != null && context.Request["sign"] != null && context.Request["nonce_str"] != null)
