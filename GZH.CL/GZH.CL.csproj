@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AE3E236-2AFB-4086-89C2-9B03A80EEF32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GZH.CL</RootNamespace>
+    <AssemblyName>GZH.CL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="log4net">
+      <HintPath>..\..\NCD.v5\Common.Bin\log4net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access_Token\Entity\AccessTokenObject.cs" />
+    <Compile Include="Access_Token\Token.cs" />
+    <Compile Include="Common\AgentSign.cs" />
+    <Compile Include="Common\Cache.cs" />
+    <Compile Include="Common\DateTimeManger.cs" />
+    <Compile Include="Common\Encrypt\MD5.cs" />
+    <Compile Include="Common\Encrypt\Sha1.cs" />
+    <Compile Include="Common\HttpService.cs" />
+    <Compile Include="Common\Serialize\JsonHelper.cs" />
+    <Compile Include="Common\Serialize\XmlHelper.cs" />
+    <Compile Include="Common\Util.cs" />
+    <Compile Include="ConfigSetting.cs" />
+    <Compile Include="Config\AgentConfig.cs" />
+    <Compile Include="Config\ConfigSetting.cs" />
+    <Compile Include="Config\Entity\Weixin.cs" />
+    <Compile Include="Config\Entity\WeixinAgent.cs" />
+    <Compile Include="Config\Entity\WeixinWeb.cs" />
+    <Compile Include="JsSDK\Entity\SignatureEntity.cs" />
+    <Compile Include="JsSDK\Entity\TicketEntity.cs" />
+    <Compile Include="JsSDK\JsApiTicket.cs" />
+    <Compile Include="JsSDK\Signature.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnsApi\Entity\BaseEntity.cs" />
+    <Compile Include="SnsApi\Entity\Oauth2.cs" />
+    <Compile Include="SnsApi\Entity\UserInfoApi.cs" />
+    <Compile Include="SnsApi\Entity\UserInfoEntity.cs" />
+    <Compile Include="SnsApi\Oauth2Token.cs" />
+    <Compile Include="SnsApi\UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

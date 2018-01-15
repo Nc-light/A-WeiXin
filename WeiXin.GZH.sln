@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZH.CL", "GZH.CL\GZH.CL.csproj", "{7AE3E236-2AFB-4086-89C2-9B03A80EEF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZH.Agent.Manager", "GZH.Agent.Manager\GZH.Agent.Manager.csproj", "{54AC893F-0FBE-4AD5-B689-A8C2AEB3A80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZH.Agent.Api", "GZH.Agent.Api\GZH.Agent.Api.csproj", "{24C3E8F6-98FF-4AF0-8995-A7A72F5E0C1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AE3E236-2AFB-4086-89C2-9B03A80EEF32}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7AE3E236-2AFB-4086-89C2-9B03A80EEF32}.Debug|x86.Build.0 = Debug|Any CPU
+		{7AE3E236-2AFB-4086-89C2-9B03A80EEF32}.Release|x86.ActiveCfg = Release|Any CPU
+		{7AE3E236-2AFB-4086-89C2-9B03A80EEF32}.Release|x86.Build.0 = Release|Any CPU
+		{54AC893F-0FBE-4AD5-B689-A8C2AEB3A80F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{54AC893F-0FBE-4AD5-B689-A8C2AEB3A80F}.Debug|x86.Build.0 = Debug|Any CPU
+		{54AC893F-0FBE-4AD5-B689-A8C2AEB3A80F}.Release|x86.ActiveCfg = Release|Any CPU
+		{54AC893F-0FBE-4AD5-B689-A8C2AEB3A80F}.Release|x86.Build.0 = Release|Any CPU
+		{24C3E8F6-98FF-4AF0-8995-A7A72F5E0C1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{24C3E8F6-98FF-4AF0-8995-A7A72F5E0C1C}.Debug|x86.Build.0 = Debug|Any CPU
+		{24C3E8F6-98FF-4AF0-8995-A7A72F5E0C1C}.Release|x86.ActiveCfg = Release|Any CPU
+		{24C3E8F6-98FF-4AF0-8995-A7A72F5E0C1C}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
